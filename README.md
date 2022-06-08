@@ -8,10 +8,10 @@ With all the knowledge you have now, you will create a blockchain.
 
 #### Requirements 
 
--You can use whatever programming language you want. 
--Update this README with a brief explanation of the project. 
--Comment your code so your teammates at Zircon can understand it. 
--Use external libraries if you want. 
+- You can use whatever programming language you want. 
+- Update this README with a brief explanation of the project. 
+- Comment your code so your teammates at Zircon can understand it. 
+- Use external libraries if you want. 
 
 ### List of resources
 
