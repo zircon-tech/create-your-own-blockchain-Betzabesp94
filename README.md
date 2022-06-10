@@ -1,44 +1,56 @@
-## Unit 1 -English Version- 🚀
+## Betzachain 🚀
 
-This will be your first project on this Learning Path you have admin permissions on this repo so you can change it as you like. 
+### Unit 1 -Creating a simple C++ Blockchain-
 
-### What's this project about?
+Create a simple form of blockchain using C++ Programming Language. 
 
-With all the knowledge you have now, you will create a blockchain. 
+When thinking about Blockchain my first approach was to use a LinkedList as a structure that instead of nodes, use Blocks
+and that the hash of the block be used as a pointer for the next one. 
 
-#### Requirements 
+Blockchain really uses Merkle Tree as Data Structure. 
+[Is Blockchain a Linked List? | Amarpreet Singh](https://medium.com/brandlitic/difference-between-blockchain-vs-linked-list-c8901ce1ca96)
+[How Bitcoin & The Block Chain Work - The Merkle Tree](https://www.youtube.com/watch?v=fFmN5TPj8Qk&ab_channel=TechNance)
 
-- You can use whatever programming language you want. 
-- Update this README with a brief explanation of the project. 
-- Comment your code so your teammates at Zircon can understand it. 
-- Use external libraries if you want. 
+#### Requirements for develop this project
 
-### List of resources
+- Visual Studio. 
+- OpenSSL Library (for hash function not added yet)
+
+
+### Development Process of this project 
 
 #### General
 
-- [Creating a blockchain in 60 lines of Javascript](https://dev.to/freakcdev297/creating-a-blockchain-in-60-lines-of-javascript-5fka)
-- [¿Cómo crear una cadena de bloques con Python?](https://geekflare.com/es/create-a-blockchain-with-python/#:~:text=Creando%20la%20clase%20Block,que%20Blockchain%20cree%20transacciones%20seguras.)
+- Project Setup (At this stage)
+- LinkedList or Merkle Tree (Probably test both on different branches)
+- Genesis Block 
+- Mining Blocks 
+- Consensus 
 
-## Unidad 1 -Versión en español - 🚀
 
-Este será tu primer proyecto en esta ruta de aprendizaje. Tienes permisos de administrador en este repositorio para que puedas cambiarlo como desees.
+##  Betzachain 🚀
 
-### ¿De qué se trata este proyecto?
+###  Unidad 1 - Creando una Blockchain simple usando C++ - 🚀
 
-Con todo el conocimiento que tienes ahora, crearás una cadena de bloques.
+Crear una forma simple de cadena de bloques utilizando el lenguaje de programación C++.
+
+Cuando pensé en Blockchain, mi primer enfoque fue usar una LinkedList como estructura de datos que, en lugar de nodos, usara Bloques.
+y que el hash del bloque se use como puntero para el siguiente.
+
+Blockchain realmente usa Merkle Tree como estructura de datos.
+[Is Blockchain a Linked List? | Amarpreet Singh](https://medium.com/brandlitic/difference-between-blockchain-vs-linked-list-c8901ce1ca96)
+[How Bitcoin & The Block Chain Work - The Merkle Tree](https://www.youtube.com/watch?v=fFmN5TPj8Qk&ab_channel=TechNance)
 
 #### Requisitos
 
-- Puedes usar el lenguaje de programación que quieras.
-- Actualiza este README con una breve explicación del proyecto.
-- Comenta tu código para que tus compañeros de Zircon puedan entenderlo.
-- Utiliza bibliotecas externas si quieres.
+- Visual Studio. 
+- Librería OpenSSL (Para función Hash, no agregada aún)
 
-### Lista de recursos
-
+### Proceso de desarrollo de este proyecto 
 #### General
 
-- [Creating a blockchain in 60 lines of Javascript](https://dev.to/freakcdev297/creating-a-blockchain-in-60-lines-of-javascript-5fka)
-- [¿Cómo crear una cadena de bloques con Python?](https://geekflare.com/es/create-a-blockchain-with-python/#:~:text=Creando%20la%20clase%20Block,que%20Blockchain%20cree%20transacciones%20seguras.)
-
+- Configuración del proyecto (en esta etapa)
+- LinkedList o Merkle Tree (Probablemente crear ramas para cada enfoque)
+- Bloque Génesis
+- Minado de Bloques
+- Consenso
