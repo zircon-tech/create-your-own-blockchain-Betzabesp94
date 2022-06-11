@@ -14,7 +14,7 @@ Blockchain really uses Merkle Tree as Data Structure.
 #### Requirements for develop this project
 
 - Visual Studio. 
-- OpenSSL Library (for hash function not added yet)
+- OpenSSL Library (Added for release Win64bits)
 
 
 ### Development Process of this project 
@@ -44,7 +44,7 @@ Blockchain realmente usa Merkle Tree como estructura de datos.
 #### Requisitos
 
 - Visual Studio. 
-- Librería OpenSSL (Para función Hash, no agregada aún)
+- Librería OpenSSL (Agregada para Win64bits)
 
 ### Proceso de desarrollo de este proyecto 
 #### General
