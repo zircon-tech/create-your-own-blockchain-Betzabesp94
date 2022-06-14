@@ -9,6 +9,7 @@ and that the hash of the block be used as a pointer for the next one.
 
 Blockchain really uses Merkle Tree as Data Structure. 
 [Is Blockchain a Linked List? | Amarpreet Singh](https://medium.com/brandlitic/difference-between-blockchain-vs-linked-list-c8901ce1ca96)
+
 [How Bitcoin & The Block Chain Work - The Merkle Tree](https://www.youtube.com/watch?v=fFmN5TPj8Qk&ab_channel=TechNance)
 
 #### Requirements for develop this project
@@ -21,12 +22,14 @@ Blockchain really uses Merkle Tree as Data Structure.
 
 #### General
 
-- Project Setup (At this stage)
+- Project Setup 
+- Transacciones (At this stage)
 - LinkedList or Merkle Tree (Probably test both on different branches)
 - Genesis Block 
 - Mining Blocks 
 - Consensus 
 
+### How it goes... 
 
 ##  Betzachain 🚀
 
@@ -39,6 +42,7 @@ y que el hash del bloque se use como puntero para el siguiente.
 
 Blockchain realmente usa Merkle Tree como estructura de datos.
 [Is Blockchain a Linked List? | Amarpreet Singh](https://medium.com/brandlitic/difference-between-blockchain-vs-linked-list-c8901ce1ca96)
+
 [How Bitcoin & The Block Chain Work - The Merkle Tree](https://www.youtube.com/watch?v=fFmN5TPj8Qk&ab_channel=TechNance)
 
 #### Requisitos
@@ -49,8 +53,11 @@ Blockchain realmente usa Merkle Tree como estructura de datos.
 ### Proceso de desarrollo de este proyecto 
 #### General
 
-- Configuración del proyecto (en esta etapa)
+- Configuración del proyecto 
+- Transacciones (en esta etapa)
 - LinkedList o Merkle Tree (Probablemente crear ramas para cada enfoque)
 - Bloque Génesis
 - Minado de Bloques
 - Consenso
+
+### Como va...
