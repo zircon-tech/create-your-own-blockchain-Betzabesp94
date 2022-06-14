@@ -30,7 +30,7 @@ Blockchain really uses Merkle Tree as Data Structure.
 - Consensus 
 
 ### How it goes... 
-
+![Test_Transactions](https://github.com/zircon-tech/create-your-own-blockchain-Betzabesp94/blob/feature-linkedlist-structure/Images/BetzachainTransactions.PNG?raw=true)
 ##  Betzachain 🚀
 
 ###  Unidad 1 - Creando una Blockchain simple usando C++ - 🚀
@@ -61,3 +61,4 @@ Blockchain realmente usa Merkle Tree como estructura de datos.
 - Consenso
 
 ### Como va...
+![Test_Transactions](https://github.com/zircon-tech/create-your-own-blockchain-Betzabesp94/blob/feature-linkedlist-structure/Images/BetzachainTransactions.PNG?raw=true)
