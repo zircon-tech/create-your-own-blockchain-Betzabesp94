@@ -14,8 +14,22 @@
 // Openssl library 
 #include <openssl/sha.h>
 
-
+// Declearing Functions
+void Print();
 std::string sha256(const std::string str);
+
+// Structs and classes
+struct Block
+{
+    std::string data;
+    std::string hash;
+    Block* link;
+};
+// Pointer to Block (The head)
+// Two operations
+// 1. Insert a Block to the link list
+// 2. Travelsal the link list
+Block* head;
 
 class Transaction
 {
@@ -33,7 +47,7 @@ public:
         std::time_t t = std::time(0);
         std::tm* now = std::localtime(&t);
         std::string timeNow = std::to_string(now->tm_mday) + '-' + std::to_string(now->tm_mon + 1) + '-' + std::to_string(now->tm_year + 1900);
-        transactionString = aSender + aReceiver + std::to_string(aAmount) +"_"+ timeNow;
+        transactionString = aSender + aReceiver + std::to_string(aAmount) + "_" + timeNow;
         transactionHash = sha256(transactionString);
     }
     std::string getTransactionHash() {
@@ -41,16 +55,65 @@ public:
     }
 };
 
-int main() {
-    Transaction t1("Tyrion", "Sansa", 50);
-    std::cout << t1.transactionString << std::endl; // returns the concatenated string (sender, receiver, amount, currentTime) 
-    std::cout << t1.getTransactionHash() << std::endl; // returns the hash of the previous string 
-    Transaction t2("Jamie", "Daenerys", 25);
-    std::cout << t2.transactionString << std::endl;
-    std::cout << t2.getTransactionHash() << std::endl;
-    std::cin.get();
-    return 0;
+void Insert(Transaction &sTransaction);
+
+int main()
+{
+    head = NULL;
+    int numbers;
+    std::string aSender;
+    std::string aReceiver;
+    int aAmount;
+    std::cout << "How many Transactions? " << std::endl;
+    std::cin >> numbers;
+    for (int i = 0; i < numbers; i++)
+    {
+        std::cout << "Enter the sender: " << std::endl;
+        std::cin >> aSender;
+        std::cout << "Enter the receiver: " << std::endl;
+        std::cin >> aReceiver;
+        std::cout << "Enter the amount: " << std::endl;
+        std::cin >> aAmount;
+        Transaction t(aSender, aReceiver, aAmount);
+        Insert(t);
+        Print();
+    }
+    std::cout << "Press Any key to exit and hit enter";
+    std::string anyKey;
+    std::cin>>anyKey;
+    std::cout << "Goodbye!";
 }
+
+// Insert a new Block at the begining of the list
+void Insert(Transaction &sTransaction)
+{
+    Block* temp = new Block();
+    (*temp).data = sTransaction.transactionString;
+    (*temp).hash = sTransaction.getTransactionHash();
+    (*temp).link = head;
+    head = temp;
+
+    // std::cout << head << std::endl;
+}
+
+void Print()
+{
+    Block* temp = new Block();
+    temp = head;
+    int blockNumber = 0;
+    std::cout << "The blocks are: " << std::endl;
+    while (temp != NULL)
+    {
+        std::cout << "Data: "<< (*temp).data << " ";
+        std::cout <<" Block number: "<<(blockNumber+1)<<" and the hash: "<< (*temp).hash << std::endl;
+        temp = (*temp).link;
+        blockNumber++;
+    }
+    std::cout << "" << std::endl;
+}
+
+
+
 
 // Creation of a function to hash using library 
 std::string sha256(const std::string str)

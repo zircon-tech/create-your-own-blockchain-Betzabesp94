@@ -23,8 +23,8 @@ Blockchain really uses Merkle Tree as Data Structure.
 #### General
 
 - Project Setup 
-- Transacciones (At this stage)
-- LinkedList or Merkle Tree (Probably test both on different branches)
+- Transacciones 
+- LinkedList (At this stage - Works)
 - Genesis Block 
 - Mining Blocks 
 - Consensus 
@@ -54,8 +54,8 @@ Blockchain realmente usa Merkle Tree como estructura de datos.
 #### General
 
 - Configuración del proyecto 
-- Transacciones (en esta etapa)
-- LinkedList o Merkle Tree (Probablemente crear ramas para cada enfoque)
+- Transacciones 
+- LinkedList (en esta etapa - funciona) 
 - Bloque Génesis
 - Minado de Bloques
 - Consenso
